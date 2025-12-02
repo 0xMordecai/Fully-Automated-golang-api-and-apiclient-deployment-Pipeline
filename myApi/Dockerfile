@@ -7,7 +7,7 @@ RUN go mod tidy
 RUN GO111MODULE=off GOOS=linux go build -a installsuffix cgo -o myAPI . && chmod +x ./myAPI
 
 #   second stage
-FROM alpine:3.19.6 AS dev
+FROM alpine:3.18.0 AS dev
 WORKDIR /app
 EXPOSE 8888
 COPY --from=build /app .
