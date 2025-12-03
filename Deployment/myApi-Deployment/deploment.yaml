@@ -17,3 +17,6 @@ spec:
       - name: myapi
         imagePullPolicy: Always
         image: kings5layer/myapi:latest
+        ports:
+        - containerPort: 8888
+          name: myapi-svc
