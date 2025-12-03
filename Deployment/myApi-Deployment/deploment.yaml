@@ -14,4 +14,6 @@ spec:
         app: myapi
     spec:
       containers:
-      - name: kings5layer/myapi:latest
+      - name: myapi
+        imagePullPolicy: Always
+        image: kings5layer/myapi:latest
