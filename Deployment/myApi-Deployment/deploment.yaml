@@ -4,7 +4,7 @@ metadata:
   name: myapi-deployment
 
 spec:
-  replicas:
+  replicas: 3
   selectors:
     matchLabels:
       app: myapi
