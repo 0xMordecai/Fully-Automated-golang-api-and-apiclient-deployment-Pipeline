@@ -26,3 +26,10 @@ spec:
         ports:
         - containerPort: 8888
           name: myapi-svc
+
+        livenessProbe:
+          httpGet:
+            path: /health
+            port: 8888
+            initialDelaySeconds: 3
+            periodSeconds: 3
