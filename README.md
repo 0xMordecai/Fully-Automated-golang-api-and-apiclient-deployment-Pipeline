@@ -2,3 +2,4 @@
 
 []  containerizing the App
 []  configure infrastructure for kubernetes locally using KinD
+[]  create Deployment code
