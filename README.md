@@ -1,4 +1,4 @@
-# Fully-Automated-golang-api-and-apiclient-deployment-Pipeline
+# Fully-Automated-golang-api-app-deployment-Pipeline
 
 [`**Done**`]  containerizing the App
 
