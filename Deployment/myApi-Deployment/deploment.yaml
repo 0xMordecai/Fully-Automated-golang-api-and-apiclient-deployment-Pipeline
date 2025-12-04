@@ -23,10 +23,6 @@ spec:
               memory: "200Mi"
               cpu: "200m"
 
-          ports:
-            - containerPort: 8888
-              name: myapi-svc
-
           livenessProbe:
             httpGet:
               path: /health
@@ -39,3 +35,6 @@ spec:
               port: 8888
               initialDelaySeconds: 3
               periodSeconds: 3
+          ports:
+            - containerPort: 8888
+              name: myapi-svc
