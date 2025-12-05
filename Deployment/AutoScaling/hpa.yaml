@@ -9,4 +9,10 @@ spec:
     name: myapi-deployment
   minReplicas: 1
   maxReplicas: 3
-  
+  mertics:
+  - type: Resources
+    resource:
+      name: cpu
+      target: 
+        type: Utilization
+        averageUtilization: 50%
