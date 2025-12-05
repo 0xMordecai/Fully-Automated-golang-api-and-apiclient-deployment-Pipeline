@@ -1,11 +1,13 @@
 # Fully-Automated-golang-api-app-deployment-Pipeline
 
-[`**Done**`]  containerizing the App
+[`Done`]  containerizing the App
 
-[`**Done**`]  configure infrastructure for kubernetes locally using KinD
+[`Done`]  configure infrastructure for kubernetes locally using KinD
 
-[`**on progress**`]  create Deployment code
+[`on progress`]  create Deployment code
 
-[`**on progress**`] write the configuration file to expose the pods to external world using Kubernetes Services
+[]  Adding a Kubernetes Deployment strategy
+
+[`on progress`] write the configuration file to expose the pods to external world using Kubernetes Services
 
 []  Configure Horizontal Pod autoscaling Resource
