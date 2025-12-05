@@ -8,10 +8,10 @@
 
 [`on progress`]  create Deployment code
 
-[]  Adding a Kubernetes Deployment strategy
-
 [`on progress`] write the configuration file to expose the pods to external world using Kubernetes Services
 
 []  Configure Horizontal Pod autoscaling Resource
 
 ## Roll-Out Update
+
+[]  Adding a Kubernetes Deployment strategy
