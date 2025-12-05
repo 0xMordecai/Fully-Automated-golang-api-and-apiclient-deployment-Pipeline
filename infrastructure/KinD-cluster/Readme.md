@@ -9,7 +9,6 @@
     - role: control-plane
     - role: worker
     - role: worker
-    - role: worker
 ```
 
 **To bootstrap your KinD cluster with the preceding configuration, run the following command:**
