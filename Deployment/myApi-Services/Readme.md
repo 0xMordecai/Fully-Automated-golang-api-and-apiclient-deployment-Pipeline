@@ -18,4 +18,4 @@ spec:
     targetPort: 8888
 ```
 
-Let’s apply this manifest to see what we get using the following command:
+**Let’s apply this manifest to see what we get using the following command:**
