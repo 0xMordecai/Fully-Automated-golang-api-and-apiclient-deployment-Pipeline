@@ -20,5 +20,5 @@ spec:
 
 **Let’s apply this manifest to see what we get using the following command:**
 ```shell
-kubectl apply -f 
+kubectl apply -f service.yaml
 ```
