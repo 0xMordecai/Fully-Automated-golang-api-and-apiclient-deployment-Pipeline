@@ -17,3 +17,5 @@ spec:
     protocol: TCP
     targetPort: 8888
 ```
+
+Let’s apply this manifest to see what we get using the following command:
