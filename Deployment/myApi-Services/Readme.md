@@ -4,5 +4,16 @@
 
 **we will apply this manifest for the `NodePort Service` resource**
 ```yaml
-
+apiVersion: v1
+kind: service
+metadata:
+  name: myapi-service
+spec:
+  type: NodePort
+  selector:
+    app: myapi
+  ports:
+  - port: 8888
+    protocol: TCP
+    targetPort: 8888
 ```
