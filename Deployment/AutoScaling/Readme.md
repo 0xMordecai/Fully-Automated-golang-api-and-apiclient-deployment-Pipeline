@@ -25,3 +25,6 @@ spec:
 ```
 
 We will use the following command to perform autoscaling:
+```shell
+
+```
