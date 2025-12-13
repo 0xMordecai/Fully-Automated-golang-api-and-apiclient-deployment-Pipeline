@@ -1,7 +1,7 @@
 #   first stage
 FROM golang:1.25.4 AS build
 WORKDIR /app
-COPY ../go.mod .
+COPY myApi-app/go.mod .
 COPY myApi-app/main.go .
 RUN go mod tidy
 RUN CGO_ENABLED=0 GOOS=linux go build -ldflags  "-w -X main.docker=true" -o myAPI . && chmod +x ./myAPI
