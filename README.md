@@ -8,7 +8,7 @@
 
 [`Done`]  create Deployment code
 
-[`on progress`] write the configuration file to expose the pods to external world using Kubernetes Services
+[`Done`] write the configuration file to expose the pods to external world using Kubernetes Services
 
 [`Done`]  Configure Horizontal Pod autoscaling Resource
 
