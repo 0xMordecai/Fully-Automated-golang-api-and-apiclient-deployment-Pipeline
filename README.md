@@ -14,6 +14,6 @@
 
 ## Roll-Out Update
 
-[]  containerizing the App's new version
+[`On-progress`]  containerizing the App's new version
 
 [`On-progress`]  Adding a Kubernetes Deployment strategy
