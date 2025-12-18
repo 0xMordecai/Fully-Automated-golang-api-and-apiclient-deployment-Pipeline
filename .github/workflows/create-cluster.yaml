@@ -1,1 +1,4 @@
 name: Create Kubernetes Cluster
+on:
+  push: 
+    branches: [ prod, dev ]
