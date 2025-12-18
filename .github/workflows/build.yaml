@@ -1,7 +1,5 @@
 name: Build and Test Api
-on:
-  push:
-    branches: [ prod ]
+on: push
 jobs:
   build:
     runs-on: ubuntu-latest
