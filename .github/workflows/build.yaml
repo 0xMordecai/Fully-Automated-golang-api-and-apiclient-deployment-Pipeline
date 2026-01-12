@@ -17,7 +17,10 @@ jobs:
       run: docker login -u ${{ secrets.DOCKER_USER }} -p ${{ secrets.DOCKER_PASSWORD }}
     - name: Build the Docker image
       id: build
-      run: docker build . --file Dockerfile --tag ${{ secrets.DOCKER_USER }}/fully-automated-golang-api-app-deployment-pipeline:$(git rev-parse --short "$GITHUB_SHA")
+      run: docker build . --file Dockerfile --tag ${{ secrets.DOCKER_USER }}/simple-golang-api:$(git rev-parse --short "$GITHUB_SHA")
+    - name: Scan Image for vulnerabilities
+      id: vul-scan
+      run: gyrpe -f critical ${{ secrets.DOCKER_USER }}/simple-golang-api:$(git rev-parse --short "$GITHUB_SHA")
     - name: Push the Docker image
       id: push 
-      run: docker push ${{ secrets.DOCKER_USER }}/fully-automated-golang-api-app-deployment-pipeline:$(git rev-parse --short "$GITHUB_SHA")
+      run: docker push ${{ secrets.DOCKER_USER }}/simple-golang-api:$(git rev-parse --short "$GITHUB_SHA")
