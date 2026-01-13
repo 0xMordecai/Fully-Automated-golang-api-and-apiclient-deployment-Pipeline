@@ -11,4 +11,3 @@ func main() {
 	})
 	http.ListenAndServe(":8888", nil)
 }
-func hello() {}
